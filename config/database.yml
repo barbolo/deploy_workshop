@@ -19,7 +19,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
   pool: 5
-  timeout: 5000
+  database: <%= ENV['APPLICATION_MYSQL_DATABASE'] %>
+  host: <%= ENV['APPLICATION_MYSQL_HOST'] %>
+  port: <%= ENV['APPLICATION_MYSQL_PORT'] %>
+  username: <%= ENV['APPLICATION_MYSQL_USERNAME'] %>
+  password: <%= ENV['APPLICATION_MYSQL_PASSWORD'] %>

@@ -6,7 +6,7 @@ gem 'aws-sdk'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'paperclip'
-gem 'pg'
+gem 'mysql2'
 gem 'sass-rails'
 gem 'uglifier'
 
