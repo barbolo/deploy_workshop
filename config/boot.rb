@@ -1,3 +1,6 @@
+# Load environment variables
+require File.expand_path('../initializers/set_env_variables', __FILE__)
+
 # Set up gems listed in the Gemfile.
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 
