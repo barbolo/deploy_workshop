@@ -31,10 +31,11 @@
 |                     | SSH    | TCP       | 22          | 0.0.0.0/0      |
 |                     | HTTP   | TCP       | 80          | 0.0.0.0/0      |
 | **application_rds** |        |           |             |                |
-|                     | MySQL  | TCP       | 3306        | *application*  |
+|                     | MySQL  | TCP       | 3306        | *application** |
 | **application_elb** |        |           |             |                |
 |                     | HTTP   | TCP       | 80          | 0.0.0.0/0      |
 
+\* *Use the ID of this security group.*
 
 
 ### 4. RDS (Relational Database Service)
@@ -51,7 +52,7 @@
 | **Multi-AZ**                    | No\*                |
 | **Allocated Storage**           | 5GB                 |
 | **Use Provisioned IOPS**        | No                  |
-| **DB Instance Identifier**      | application_db      |
+| **DB Instance Identifier**      | application-db      |
 | **Master Username**             | deploy_workshop     |
 | **Master Password**             | stupidpassword      |
 | **Confirm Password**            | stupidpassword      |
