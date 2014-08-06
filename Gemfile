@@ -20,3 +20,11 @@ group :test do
   gem 'capybara'
   gem 'shoulda-matchers'
 end
+
+group :development do
+  # Use Capistrano to automate deployments.
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'cap-ec2'
+end

@@ -1,0 +1,5 @@
+# Used by capistrano.
+# This file should never be commited, because it would reveal your AWS
+# credentials. It's only needed when you run "cap production deploy".
+access_key_id: 'PUT_YOUR_ACCESS_KEY_ID_HERE'
+secret_access_key: 'PUT_YOUR_SECRET_ACCESS_KEY_HERE'
